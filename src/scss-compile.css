@@ -4,7 +4,7 @@
 
 .card-scss .card-type {
     background-color: #8B7DEB;
-    border-color: #fff;
+    border-color: #FCFCFC;
 }
 
 .card-scss .scss-btn {
@@ -21,7 +21,7 @@
 }
 
 .card-scss .scss-btn:hover {
-    background-color: #eee;
+    background-color: #EEE;
 }
 
 .card-scss .scss-btn:active {
@@ -29,10 +29,6 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.card-scss .scss-btn.scss-like {
-    background-color: white;
-}
-
-.card-scss .scss-btn.scss-pat {
+.card-scss .scss-btn.scss-like, .card-scss .scss-btn.scss-pat {
     background-color: white;
 }

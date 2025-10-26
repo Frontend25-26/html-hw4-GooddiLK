@@ -1,4 +1,6 @@
 $scss-bg: #8B7DEB;
+$button-bg: #F0F0F0;
+$border-color: #FCFCFC;
 $btn-pad: 12px 16px;
 $transition: 0.15s ease;
 $radius: 10px;
@@ -16,7 +18,7 @@ $radius: 10px;
     cursor: pointer;
 
     &:hover {
-        background-color: #eee;
+        background-color: #EEE;
     }
 
     &:active {
@@ -30,19 +32,15 @@ $radius: 10px;
 
     .card-type {
         background-color: $scss-bg;
-        border-color: #fff;
+        border-color: $border-color;
     }
 
     .scss-btn {
         @include scss-btn-base;
 
         background-color: lighten($scss-bg, 5%);
-        &.scss-like {
-            background-color: lighten(#f0f0f0, 15%);
-        }
-
-        &.scss-pat {
-            background-color: lighten(#f0f0f0, 15%);
+        &.scss-like, &.scss-pat {
+            background-color: lighten($button-bg, 15%);
         }
     }
 }
