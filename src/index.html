@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="ru">
+    <link rel="stylesheet" href="./style.css" lang="ru">
+    <link rel="stylesheet" href="./scss-compile.css" lang="ru">
     <title>HW4 - Три кота</title>
 </head>
 <body>
+<div class="cards-box">
+    <article class="card">
+        <h3 class="card-type">CSS3</h3>
+        <div class="card-content">
+            <div class="card-img">
+                <img src="./internal/images/cat1.jpg" alt="cat1-pic">
+            </div>
+            <div class="card-text">
+                <h4 class="cat-name">Рыжик</h4>
+                <p class="cat-age">Возраст: 0 лет</p>
+                <p class="cat-info">Маленький и любопытный котёнок, впервые познающий мир — его глаза широко раскрыты, и он готов к каждой шалости.</p>
+            </div>
+            <div class="card-footer">
+                <button class="button like-button">like</button>
+                <button class="button pat-button">pat</button>
+            </div>
+        </div>
+    </article>
+
+    <article class="card">
+        <h3 class="py-3 text-center text-5xl border-3 border-gray-300 rounded-xl bg-indigo-400">Tailwind</h3>
+        <div class="border-3 border-gray-300 rounded-xl bg-indigo-400">
+            <div class="m-5">
+                <img src="./internal/images/cat2.jpg" alt="cat2-pic">
+            </div>
+            <div class="m-5">
+                <h4 class="pl-5 py-1 text-3xl">Барсик</h4>
+                <p class="pl-5 py-1">Возраст: 2 лет</p>
+                <p class="pl-5 py-1">Уверенный молодой кот, который уже усмехается жизни. Он знает себе цену и с лёгкостью покоряет внимание.</p>
+            </div>
+            <div class="mx-10 mb-5 flex justify-between">
+                <button class="btn-key">like</button>
+                <button class="btn-key">pat</button>
+            </div>
+        </div>
+    </article>
+
+    <article class="card card-scss">
+        <h3 class="card-type">SCSS</h3>
+        <div class="card-content">
+            <div class="card-img">
+                <img src="./internal/images/cat3.jpg" alt="cat3-pic">
+            </div>
+            <div class="card-text">
+                <h4 class="cat-name">Малыш</h4>
+                <p class="cat-age">Возраст: 4 лет</p>
+                <p class="cat-info">Зрелый и спокойный кот — мудрость видно в его взгляде. Он уже прошёл многое и теперь наслаждается уютом и комфортом.</p>
+            </div>
+            <div class="card-footer">
+                <button class="scss-btn scss-like">like</button>
+                <button class="scss-btn scss-pat">pat</button>
+            </div>
+        </div>
+    </article>
+
+
+</div>
 
 </body>
 </html>

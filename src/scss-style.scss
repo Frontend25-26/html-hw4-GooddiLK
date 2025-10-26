@@ -1,0 +1,48 @@
+$scss-bg: #8B7DEB;
+$btn-pad: 12px 16px;
+$transition: 0.15s ease;
+$radius: 10px;
+
+@mixin scss-btn-base {
+    padding: $btn-pad;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+    font-size: 16px;
+    font-family: inherit;
+    user-select: none;
+    transition: all $transition;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #eee;
+    }
+
+    &:active {
+        transform: scale(0.96);
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    }
+}
+
+.card-scss {
+    border-radius: $radius;
+
+    .card-type {
+        background-color: $scss-bg;
+        border-color: #fff;
+    }
+
+    .scss-btn {
+        @include scss-btn-base;
+
+        background-color: lighten($scss-bg, 5%);
+        &.scss-like {
+            background-color: lighten(#f0f0f0, 15%);
+        }
+
+        &.scss-pat {
+            background-color: lighten(#f0f0f0, 15%);
+        }
+    }
+}
