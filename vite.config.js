@@ -1,27 +1,18 @@
-import {defineConfig} from 'vite'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite'
+import { REPO_NAME } from './config.js'
 
-import {REPO_NAME} from './config'
-
-export default defineConfig(({mode}) => {
-    const isDev = mode == 'development'
+export default defineConfig(({ mode }) => {
+    const isDev = mode === 'development'
     return {
         root: './src',
-        base: isDev ? '/' : `https://frontend25-26.github.io/${REPO_NAME}/`,
+        base: isDev ? '/' : `/frontend25-26/${REPO_NAME}/`,
         server: {
             open: true,
             port: 3030,
         },
         build: {
-            outDir: './dist'
+            outDir: '../dist',
+            emptyOutDir: true,
         },
-        test: {
-            dir: './tests/unit',
-            environment: 'jsdom',
-            setupFiles: './tests/setup.js'
-        },
-        plugins: [
-            tailwindcss(),
-        ],
     }
 })

@@ -1,4 +1,8 @@
-@import "tailwindcss";
+@reference "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
     font-family: "Gabriela-Regular";
@@ -54,6 +58,15 @@ body {
     background-color: var(--answer-variant-back-color);
     border: solid 3px var(--very-light-gray-color);
     border-radius: 10px;
+}
+
+.card-img img,
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .card-img {

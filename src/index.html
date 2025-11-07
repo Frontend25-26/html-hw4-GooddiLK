@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta lang="ru">
-    <link rel="stylesheet" href="./style.css" lang="ru">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./scss-compile.css" lang="ru">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scss-compile.css">
     <title>HW4 - Три кота</title>
 </head>
 <body>
@@ -31,23 +30,32 @@
     </article>
 
     <article class="card">
-        <h3 class="py-3 text-center text-5xl border-3 border-gray-300 rounded-xl bg-indigo-400">Tailwind</h3>
-        <div class="border-3 border-gray-300 rounded-xl bg-indigo-400">
-            <div class="m-5">
-                <img src="./internal/images/cat2.jpg" alt="cat2-pic">
+        <h3 class="py-3 text-center text-5xl border-4 border-gray-300 rounded-xl bg-indigo-400 text-gray-900 font-bold">
+            Tailwind
+        </h3>
+        <div class="border-4 border-gray-300 rounded-xl bg-indigo-400 p-5 flex flex-col justify-between">
+            <div>
+                <img
+                        src="./internal/images/cat2.jpg"
+                        alt="cat2-pic"
+                        class="w-full h-auto rounded-xl object-cover"
+                >
             </div>
-            <div class="m-5">
-                <h4 class="pl-5 py-1 text-3xl">Барсик</h4>
+            <div class="mt-5 text-gray-900">
+                <h4 class="pl-5 py-1 text-3xl font-semibold">Барсик</h4>
                 <p class="pl-5 py-1">Возраст: 2 лет</p>
-                <p class="pl-5 py-1">Уверенный молодой кот, который уже усмехается жизни. Он знает себе цену и с
-                    лёгкостью покоряет внимание.</p>
+                <p class="pl-5 py-1">
+                    Уверенный молодой кот, который уже усмехается жизни. Он знает себе цену и с лёгкостью покоряет
+                    внимание.
+                </p>
             </div>
-            <div class="mx-10 mb-5 flex justify-between">
+            <div class="mt-5 mx-10 mb-5 flex justify-between">
                 <button class="btn-key">like</button>
                 <button class="btn-key">pat</button>
             </div>
         </div>
     </article>
+
 
     <article class="card card-scss">
         <h3 class="card-type">SCSS</h3>
